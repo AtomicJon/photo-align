@@ -1,0 +1,43 @@
+@use '_fonts';
+@use '_variables' as *;
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: $backgroundColor;
+  color: $textColor;
+  font-family: $fontFamily;
+  font-size: $fontSizeMedium;
+}
+
+input, select, button, textarea {
+  font-family: $fontFamily;
+  font-size: $fontSizeMedium;
+}
+
+button {
+  padding: 5px 10px;
+  color: $textColor;
+  background-color: transparent;
+  border: 1px solid $textColor;
+
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+select {
+  padding: 5px 10px;
+}
+
+#root {
+  height: 100%;
+}
